@@ -57,7 +57,6 @@
         android:onClick="reset"
         android:text="RESET"
         android:textColor="@color/white"
-        android:visibility="gone"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="@+id/button"
         app:layout_constraintStart_toStartOf="@+id/button"

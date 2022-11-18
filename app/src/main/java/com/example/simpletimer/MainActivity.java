@@ -68,7 +68,6 @@ public class MainActivity extends AppCompatActivity implements
     }
     public void start(View view){
         if(isworking){
-            button2.setVisibility(View.VISIBLE);
             button.setBackground(getDrawable(R.drawable.blue_color));
             button.setText("Pause");
             seekBar.setEnabled(false);
@@ -103,7 +102,6 @@ public class MainActivity extends AppCompatActivity implements
                         }
 
                     }
-                    button2.setVisibility(View.GONE);
                     resetTimer();
 
                 }
@@ -155,8 +153,10 @@ public class MainActivity extends AppCompatActivity implements
     }
 
     public void reset(View view){
+        if(countDownTimer != null){
         resetTimer();
-        button2.setVisibility(View.GONE);
+        }
+
     }
 
 
